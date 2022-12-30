@@ -21,9 +21,9 @@ public enum BehaviourVariant {
     public IBehaviourManager getManager()
     {
         return switch (this)
-        {
-            case PredestinedBehaviour ->new BehaviourManagerAlwaysNext();
-            case RandomOrderBehaviour ->new BehaviourManagerRandomNext();
-        };
+                {
+                    case PredestinedBehaviour ->new BehaviourManagerAlwaysNext();
+                    case RandomOrderBehaviour ->new BehaviourManagerRandomNext();
+                };
     }
 }
