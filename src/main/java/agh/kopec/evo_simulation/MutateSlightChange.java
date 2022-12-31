@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class MutateSlightChange extends MutateManager {
     Random rand;
-    public MutateSlightChange(Integer minMutate, Integer maxMutate) {
+    public MutateSlightChange(int minMutate, int maxMutate) {
         super(minMutate, maxMutate);
         rand = new Random();
     }

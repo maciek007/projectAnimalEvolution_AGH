@@ -1,6 +1,9 @@
 package agh.kopec.evo_simulation.variants;
 
-import agh.kopec.evo_simulation.*;
+import agh.kopec.evo_simulation.MapManager;
+import agh.kopec.evo_simulation.SeedManager;
+import agh.kopec.evo_simulation.SeedManagerSeedEquators;
+import agh.kopec.evo_simulation.SeedManagerSeedToxicCorpses;
 
 public enum SeedingVariant {
     FertileEquators,
@@ -16,12 +19,12 @@ public enum SeedingVariant {
         };
     }
 
-    public SeedManager getManager()
+    public SeedManager getManager(int plantsStartingAmount, int plantsDailyIncrease, MapManager map)
     {
         return switch (this)
         {
-            case FertileEquators -> new SeedManagerSeedEquators();
-            case ToxicCorpses -> new SeedManagerSeedToxicCorpses();
+            case FertileEquators -> new SeedManagerSeedEquators(map,plantsStartingAmount, plantsDailyIncrease);
+            case ToxicCorpses -> new SeedManagerSeedToxicCorpses(map,plantsStartingAmount, plantsDailyIncrease);
         };
     }
 

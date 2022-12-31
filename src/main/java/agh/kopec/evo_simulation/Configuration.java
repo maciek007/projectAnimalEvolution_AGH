@@ -16,21 +16,21 @@ public class Configuration {
     public MapVariant mapVariant = MapVariant.Globe;
     public Vector2d mapDimensions = new Vector2d(100,100);
 
-    public Integer plantsStartingAmount = 500;
-    public Integer plantsProvidingEnergy = 100;
-    public Integer plantsDailyIncrease = 100;
+    public int plantsStartingAmount = 500;
+    public int plantsProvidingEnergy = 100;
+    public int plantsDailyIncrease = 100;
     public SeedingVariant seedingVariant = SeedingVariant.FertileEquators;
 
-    public Integer animalsStartingAmount = 500;
-    public Integer animalsStartingEnergy = 100;
-    public Integer animalsBreedEnergy = 50;
-    public Float animalsBreedPartialCost = 0.2f;
+    public int animalsStartingAmount = 500;
+    public int animalsStartingEnergy = 100;
+    public int animalsBreedEnergy = 50;
+    public float animalsBreedPartialCost = 0.2f;
     public BehaviourVariant animalsBehaviourVariant = BehaviourVariant.PredestinedBehaviour;
 
-    public Integer genesAmount = 10;
+    public short genesAmount = 10;
     public MutateVariant genesMutateVariant = MutateVariant.SlightChange;
-    public Integer genesMinMutate = 0;
-    public Integer genesMaxMutate = 4;
+    public short genesMinMutate = 0;
+    public short genesMaxMutate = 4;
 
     public Configuration(Path file) throws IOException, IllegalArgumentException {
 
@@ -65,10 +65,10 @@ public class Configuration {
                     case "animalsBreedPartialCost" -> animalsBreedPartialCost = Float.parseFloat(v);
                     case "animalsBehaviourVariant" -> animalsBehaviourVariant = BehaviourVariant.fromString(v);
 
-                    case "genesAmount" -> genesAmount = Integer.parseInt(v);
+                    case "genesAmount" -> genesAmount = (short) Integer.parseInt(v);
                     case "genesMutateVariant" -> genesMutateVariant = MutateVariant.fromString(v);
-                    case "genesMinMutate" -> genesMinMutate = Integer.parseInt(v);
-                    case "genesMaxMutate" -> genesMaxMutate = Integer.parseInt(v);
+                    case "genesMinMutate" -> genesMinMutate = (short) Integer.parseInt(v);
+                    case "genesMaxMutate" -> genesMaxMutate = (short) Integer.parseInt(v);
                     default -> throw new IllegalArgumentException("Error parsing file - invalid argumentName");
                 }
             });

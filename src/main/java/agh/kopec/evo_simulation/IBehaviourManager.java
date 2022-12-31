@@ -1,5 +1,5 @@
 package agh.kopec.evo_simulation;
 
 public interface IBehaviourManager {
-    Integer chooseNewGene(Integer activeGene, Integer numberOfGenes);
+    short chooseNewGene(short activeGene, short numberOfGenes);
 }

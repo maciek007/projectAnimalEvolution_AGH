@@ -5,7 +5,7 @@ import java.util.Random;
 public class MutateFullRandom extends MutateManager {
     Random rand;
 
-    public MutateFullRandom(Integer minMutate, Integer maxMutate) {
+    public MutateFullRandom(int minMutate, int maxMutate) {
         super(minMutate, maxMutate);
         rand = new Random();
     }
