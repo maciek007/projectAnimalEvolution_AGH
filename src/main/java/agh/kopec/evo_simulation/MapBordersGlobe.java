@@ -11,7 +11,7 @@ public class MapBordersGlobe extends MapBorders{
         if(newPosition.x >= dimensions.x)
             newPosition.x -= dimensions.x;
         if(newPosition.x < 0)
-            newPosition.x = dimensions.x - newPosition.x;
+            newPosition.x = dimensions.x + newPosition.x;
 
         if(newPosition.y >= dimensions.y) {
             newPosition.y = dimensions.y - 1;

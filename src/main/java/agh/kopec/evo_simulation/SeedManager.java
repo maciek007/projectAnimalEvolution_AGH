@@ -14,8 +14,8 @@ public abstract class SeedManager {
     final Set <Vector2d> fertileMap;
     final Set <Vector2d> notFertileMap;
 
-    Set <Vector2d> free_fertileMap;
-    Set <Vector2d> free_notFertileMap;
+    Set <Vector2d> free_fertileMap = new HashSet<>();
+    Set <Vector2d> free_notFertileMap = new HashSet<>();
 
     public void seed()
     {
@@ -29,7 +29,7 @@ public abstract class SeedManager {
         this.map = map;
         this.plantsDailyIncrease = plantsDailyIncrease;
         this.stats = map.simulationStats;
-        this.plantMap = new boolean[map.dimensions.y][map.dimensions.x];
+        this.plantMap = new boolean[map.dimensions.x][map.dimensions.y];
         fertileMap = new HashSet<>();
         notFertileMap = new HashSet<>();
     }
@@ -60,7 +60,7 @@ public abstract class SeedManager {
         if(a>=fMsize)
         {
             a = fMsize;
-            b = n-a;
+            b = Math.min(n - a, fNMsize);
         }
         else if(b>= fNMsize)
         {
@@ -96,7 +96,10 @@ public abstract class SeedManager {
                 }
                 j+=1;
             }
+
+            //System.out.println(vs.size() + " " + free_fields.size());
             vs.forEach(free_fields::remove);
+            //System.out.println(free_fields.size() + "\n");
         }
     }
 }

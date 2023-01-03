@@ -1,23 +1,26 @@
 package agh.kopec.evo_simulation;
 
-import java.util.Set;
+import java.util.HashSet;
 
 public class SeedManagerSeedEquators extends SeedManager {
 
     public SeedManagerSeedEquators(MapManager map, int plantsStartingAmount, int plantsDailyIncrease) {
         super(map, plantsDailyIncrease);
+        int fertile_num = map.dimensions.x * map.dimensions.y / 5;
         int equators = (int) Math.ceil(map.dimensions.y / 5f);
-        if(equators%2 == 1 && map.dimensions.y%2 == 0) equators +=1;
-        else if(equators%2 == 0 && map.dimensions.y%2 == 1) equators+=1;
+        if(equators%2 != map.dimensions.y%2) equators +=1;
 
         int j = 0;
 
         for(int i = (map.dimensions.y - equators) / 2; i<(map.dimensions.y + equators) / 2; i++) {
             for (int ii = 0; ii < map.dimensions.x; ii++) {
-                fertileMap.add(new Vector2d(ii, i));
-                j += 1;
-                if (j == plantsStartingAmount)
+                if (j == fertile_num)
                     notFertileMap.add(new Vector2d(ii, i));
+                else {
+                    fertileMap.add(new Vector2d(ii, i));
+                    j += 1;
+                }
+
             }
         }
 
@@ -32,8 +35,8 @@ public class SeedManagerSeedEquators extends SeedManager {
             }
         }
 
-        free_fertileMap = Set.copyOf(fertileMap);
-        free_notFertileMap = Set.copyOf(notFertileMap);
+        free_fertileMap = new HashSet<>(fertileMap);
+        free_notFertileMap = new HashSet<>(notFertileMap);
 
         seed(plantsStartingAmount);
     }

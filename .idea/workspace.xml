@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="47551240-145b-45ad-9d73-b7f290758bd8" name="Changes" comment="version1">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/AnimalClicked.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/gui/SimulationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/animal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/configurations/example.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/configurations/moreCrazy.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/configurations/smallGeneLeng.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/grass.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testZapisu.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/AnimalsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/AnimalsManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/ApplicationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/ConfigManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/ConfigManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/Genome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/Genome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/MapBordersGlobe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/MapBordersGlobe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/MapManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/MapManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/MapVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/MapVisualizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/MoveDirection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/MoveDirection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/MutateFullRandom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/MutateFullRandom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/MutateManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/MutateManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/MutateSlightChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/MutateSlightChange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/SeedManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/SeedManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/SeedManagerSeedEquators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/SeedManagerSeedEquators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/SeedManagerSeedToxicCorpses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/SeedManagerSeedToxicCorpses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/SimulationEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/SimulationEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/SimulationHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/SimulationStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/SimulationStats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/gui/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/gui/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/gui/SimulationsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/utility/MultiRandom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/utility/MultiRandom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/example.config" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/configurations/example_error.config" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2IoKeoIERKTn1YOVA44EgzVQBpW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/maciek007/IdeaProjects/animalsEvolution/src/main/resources/configurations&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="agh.kopec.evo_simulation" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\maciek007\IdeaProjects\animalsEvolution\src\main\resources\configurations" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\maciek007\IdeaProjects\animalsEvolution\src\main\resources" />
+      <recent name="C:\Users\maciek007\IdeaProjects\animalsEvolution\src\main\resources\configurations" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="agh.kopec.evo_simulation" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="agh.kopec.evo_simulation.Main" />
+      <module name="animalsEvolution.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="agh.kopec.evo_simulation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <module name="animalsEvolution.test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="47551240-145b-45ad-9d73-b7f290758bd8" name="Changes" comment="" />
+      <created>1670842600129</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670842600129</updated>
+    </task>
+    <task id="LOCAL-00001" summary="behaviour">
+      <created>1672392448711</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1672392448711</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Mutate">
+      <created>1672396275962</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1672396275962</updated>
+    </task>
+    <task id="LOCAL-00003" summary="MapBorders">
+      <created>1672406805433</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1672406805434</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Logical Layer">
+      <created>1672444808627</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672444808627</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1." />
+    <MESSAGE value="behaviour" />
+    <MESSAGE value="Mutate" />
+    <MESSAGE value="MapBorders" />
+    <MESSAGE value="Logical Layer" />
+    <MESSAGE value="version1" />
+    <option name="LAST_COMMIT_MESSAGE" value="version1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/agh/kopec/evo_simulation/MapVisualizer.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="javafx.scene.layout.VBox" memberName="childSet" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/animalsEvolution$Main.ic" NAME="Main Coverage Results" MODIFIED="1672653916027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>agh.kopec.evo_simulation.*</FILTER>
+    </SUITE>
+  </component>
+</project>

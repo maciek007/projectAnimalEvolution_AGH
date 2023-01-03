@@ -3,7 +3,7 @@ package agh.kopec.evo_simulation;
 import java.util.Arrays;
 import java.util.Random;
 
-public class Genome {
+public class Genome implements Comparable<Genome>{
 
     short [] genome;
 
@@ -30,12 +30,18 @@ public class Genome {
         Random rand = new Random();
         Genome g = new Genome(numberOfGenes);
         for(int i=0;i<numberOfGenes; i++)
-            g.genome[i] = (short) rand.nextInt(numberOfGenes);
+            g.genome[i] = (short) rand.nextInt(8);
         return g;
     }
 
     @Override
     public String toString() {
         return Arrays.toString(genome);
+    }
+
+
+    @Override
+    public int compareTo(Genome o) {
+        return Arrays.compare(this.genome, o.genome);
     }
 }

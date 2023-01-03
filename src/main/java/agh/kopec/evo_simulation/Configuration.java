@@ -42,8 +42,10 @@ public class Configuration {
             String line = sc.nextLine().split("#")[0];
             if(line.trim().equals("")) continue;
             String[] argument = line.split(":");
-            if(argument.length > 2) throw new IllegalArgumentException("Error parsing file - invalid line format, expected:" +
-                                                                        "ArgumentName : Value");
+            if(argument.length != 2) throw new IllegalArgumentException("Error parsing file - invalid line format, expected: \n" +
+                                                                        "ArgumentName : Value\n" +
+                                                                        "read:\n" +
+                                                                        line);
 
             arg_val.put(argument[0].trim(),argument[1].trim());
         }

@@ -16,11 +16,11 @@ public abstract class MutateManager {
         MultiRandom multiRandom = new MultiRandom();
         for(Integer r : multiRandom.rand(count,old.numberOfGenes))
         {
-            old.genome[r] = chooseNewGene(old.genome[r],old.numberOfGenes);
+            old.genome[r] = chooseNewGene(old.genome[r]);
         }
     }
 
-    protected abstract short chooseNewGene(short oldGene, short n);
+    protected abstract short chooseNewGene(short oldGene);
     public MutateManager(int minMutate, int maxMutate)
     {
         this.minMutate = minMutate;

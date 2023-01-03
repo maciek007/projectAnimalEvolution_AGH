@@ -10,8 +10,8 @@ public class MutateSlightChange extends MutateManager {
     }
 
     @Override
-    protected short chooseNewGene(short oldGene, short n){
+    protected short chooseNewGene(short oldGene){
         boolean b = rand.nextBoolean();
-        return (short)((oldGene + (b?1:-1))%n);
+        return (short)(Math.floorMod(oldGene + (b?1:-1),8));
     }
 }

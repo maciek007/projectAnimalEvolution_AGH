@@ -13,7 +13,6 @@ public class MapManager {
 
     public MapManager(Configuration conf, SimulationStats simulationStats) {
         this.simulationStats = simulationStats;
-        this.seedManager = conf.seedingVariant.getManager(conf.plantsStartingAmount, conf.plantsDailyIncrease, this);
         this.mapBorders = conf.mapVariant.getManager(conf.mapDimensions);
         this.dimensions = conf.mapDimensions;
 
@@ -21,6 +20,8 @@ public class MapManager {
         for(int i=0;i< dimensions.x;i++)
             for(int j=0;j< dimensions.y; j++)
                 corpses.put(new Vector2d(i,j),0);
+
+        this.seedManager = conf.seedingVariant.getManager(conf.plantsStartingAmount, conf.plantsDailyIncrease, this);
     }
 
     public void tryMoveTo(Animal a, Vector2d newPosition)

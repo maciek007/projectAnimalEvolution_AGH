@@ -20,7 +20,7 @@ public class MultiRandom {
 
     public Object randMultiUnique(int n, int range, boolean list)
     {
-        boolean [] choosen = new boolean[n];
+        boolean [] choosen = new boolean[range];
         Queue<Integer>q = new LinkedList<>();
 
         for(int i=0;i<n;i++)

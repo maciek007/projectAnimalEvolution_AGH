@@ -11,10 +11,10 @@ public class MutateFullRandom extends MutateManager {
     }
 
     @Override
-    protected short chooseNewGene(short oldGene, short n) {
+    protected short chooseNewGene(short oldGene) {
         short newGene = (short) rand.nextInt(8);
         if (oldGene == newGene)
-            newGene = (short) ((newGene + 1) % n);
+            newGene = (short) ((newGene + 1) % 8);
         return newGene;
     }
 }

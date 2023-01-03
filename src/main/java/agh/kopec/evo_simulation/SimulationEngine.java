@@ -1,63 +1,52 @@
 package agh.kopec.evo_simulation;
 
 
-import agh.kopec.evo_simulation.gui.App;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.HBox;
 
-import java.util.Set;
+import java.io.FileNotFoundException;
 
-public class SimulationEngine implements Runnable{
+public class SimulationEngine{
 
-    private final MapManager map;
-    private final AnimalsManager animalsManager;
-
-    private final int baseMoveDelay;
-    final boolean saveToCSV;
-    int speed;
-    private final App app = null;
-    private final int moveDelay;
+    final MapManager map;
+    public final AnimalsManager animalsManager;
 
     public final SimulationStats simulationStats;
+    private final MapVisualizer mapVisualizer;
 
 
 
-    public SimulationEngine(Configuration config, boolean saveToCSV) {
-
-        this.baseMoveDelay = ApplicationConfig.BASE_ENGINE_INTERVAL;
-        this.moveDelay = baseMoveDelay;
-        this.saveToCSV = saveToCSV;
+    public SimulationEngine(Configuration config, HBox animalTracker) throws FileNotFoundException {
         this.simulationStats = new SimulationStats(config.mapDimensions);
-
         this.map = new MapManager(config, simulationStats);
         this.animalsManager = new AnimalsManager(config,map, simulationStats);
-        this.speed = 0;
+
+        this.mapVisualizer = new MapVisualizer(map,animalsManager, animalTracker);
+
+        simulationStats.endDay();
+        animalsManager.findMostCommonGenotype();
+        //calcPos();
     }
 
-    private void dayCycle()
+    public void dayCycle()
     {
         animalsManager.removeDeath();
         animalsManager.animalsMovement();
         animalsManager.animalsEatingAndBreeding();
         map.seed();
         animalsManager.consumeEnergy();
+
         simulationStats.endDay();
-        simulationStats.day+=1;
-
-        Set<Vector2d> pos = animalsManager.getPositions();
-        pos.addAll(map.seedManager.free_notFertileMap);
-        pos.addAll(map.seedManager.free_fertileMap);
-        simulationStats.freeFields = simulationStats.fields - pos.size();
-
         animalsManager.findMostCommonGenotype();
+        //calcPos();
+        simulationStats.day += 1;
     }
 
-    @Override
-    public void run(){
-        try {
-            Thread.sleep(moveDelay);
-        }
-        catch (InterruptedException e)
-        {
-            System.out.print("Wątek symulacji nieoczekiwanie został zamknięty");
-        }
+    public void visualize(GridPane gridPane){
+        mapVisualizer.drawGrid(gridPane);
+    }
+
+    public GridPane initGrid() {
+       return mapVisualizer.initGrid();
     }
 }
